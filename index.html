@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew’s Personal Drive Backup</title>
+  <meta name="description" content="How Matthew uses rclone on Windows to back up selected folders to his Google Drive and check the uploaded copies.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="shell">
+      <a class="brand" href="./" aria-label="Matthew’s Personal Drive Backup home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 4.5h7l2 2H21v12.7H3z"/><path d="M3 9.5h18M9.1 13.5l2.1 2.1 4.1-4.1"/></svg>
+        Personal Drive Backup
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="./" aria-current="page">Overview</a>
+        <a href="privacy.html">Privacy policy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shell" id="main">
+    <p class="kicker">Personal backup tool</p>
+    <h1>Matthew’s Personal Drive Backup</h1>
+    <p class="intro">I use rclone on my Windows computer to back up folders I choose to my Google Drive. I use Google sign-in to give rclone access to my account.</p>
+    <section class="workflow" aria-labelledby="backup-heading">
+      <h2 id="backup-heading">How I back up a folder</h2>
+      <ol class="steps">
+        <li><h3>Choose the folders</h3><p>I select a source folder on my computer and the destination folder in my Drive.</p></li>
+        <li><h3>Copy to Drive</h3><p>Rclone finds the destination, uploads the selected files and preserves their folder structure.</p></li>
+        <li><h3>Check the copies</h3><p>I compare names and sizes, and use file checksums where available, before deciding whether to remove a local copy.</p></li>
+      </ol>
+    </section>
+    <section class="policy-link" aria-labelledby="access-heading">
+      <h2 id="access-heading">Why the tool requests Drive access</h2>
+      <p class="measure">I use existing folders as well as new ones. Drive access lets rclone find those folders, check files already there and retrieve a backup when I need it.</p>
+      <p><a href="privacy.html">Read the privacy policy</a></p>
+    </section>
+  </main>
+  <footer><div class="shell">
+    <p>Matthew · <a href="https://github.com/matthewszeto">matthewszeto on GitHub</a></p>
+    <a href="privacy.html">Privacy policy</a>
+  </div></footer>
+</body>
+</html>
