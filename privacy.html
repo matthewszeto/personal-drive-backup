@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy | Matthew’s Personal Drive Backup</title>
+  <meta name="description" content="What Matthew’s Personal Drive Backup accesses, how backup data is used and retained, and how to revoke its Google Drive access.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="shell">
+      <a class="brand" href="./" aria-label="Matthew’s Personal Drive Backup home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 4.5h7l2 2H21v12.7H3z"/><path d="M3 9.5h18M9.1 13.5l2.1 2.1 4.1-4.1"/></svg>
+        Personal Drive Backup
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="./">Overview</a>
+        <a href="privacy.html" aria-current="page">Privacy policy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shell" id="main">
+    <article class="measure">
+      <p class="kicker">Matthew’s Personal Drive Backup</p>
+      <h1>Privacy policy</h1>
+      <p class="date">Effective <time datetime="2026-10-31">31 October 2026</time></p>
+      <p>I’m Matthew, the operator of this personal backup tool. This policy covers my desktop rclone setup and these public information pages.</p>
+      <section aria-labelledby="access">
+        <h2 id="access">What the tool can access</h2>
+        <p>Google’s full Drive permission allows rclone to read, create, edit and delete files that my connected account can access. I use it to locate backup folders, upload selected files, check existing copies and restore files I choose.</p>
+        <p>A transfer reads file contents and uses metadata such as names, folder paths, Drive file and folder IDs, sizes, modification times and checksums where available. A restore or a content comparison can download file contents from Drive.</p>
+      </section>
+      <section aria-labelledby="storage">
+        <h2 id="storage">Where the data goes</h2>
+        <p>Rclone transfers backup data between my computer and Google Drive over HTTPS. Google stores the remote copies in the account I authorize. Access to those copies follows the folders’ and files’ Drive sharing permissions.</p>
+        <p>Rclone keeps the Google authorization tokens in its configuration under my Windows account so that later transfers can run. Local transfer and verification records can contain file names, paths, sizes, checksums and results.</p>
+        <p>I use Google API data only for the backup, verification and restore operations I request. I do not sell it or share it for advertising. My use of Google API data follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+      </section>
+      <section aria-labelledby="retention">
+        <h2 id="retention">Retention, deletion and revocation</h2>
+        <p>I keep backup copies in Drive until I delete them. Drive’s Trash settings govern removal after deletion. I keep local records until I delete them from my computer.</p>
+        <p>To stop future access, I can remove this app in <a href="https://myaccount.google.com/connections">Google Account connections</a> and remove the saved connection from rclone. To remove previously uploaded copies, I delete them in Drive separately.</p>
+      </section>
+      <section aria-labelledby="site">
+        <h2 id="site">Visiting these pages</h2>
+        <p>GitHub Pages hosts these static pages. GitHub receives ordinary web requests and logs visitors’ IP addresses for security. This site has no upload form, sign-in form or analytics scripts. Backup files and Google authorization tokens stay separate from this site. Read the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a> for GitHub’s hosting practices.</p>
+      </section>
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>For a privacy question or a deletion request, contact me using the support email shown on the app’s Google consent screen. My public profile is <a href="https://github.com/matthewszeto">matthewszeto on GitHub</a>.</p>
+      </section>
+    </article>
+  </main>
+  <footer><div class="shell">
+    <p>Matthew · <a href="https://github.com/matthewszeto">matthewszeto on GitHub</a></p>
+    <a href="privacy.html">Privacy policy</a>
+  </div></footer>
+</body>
+</html>
